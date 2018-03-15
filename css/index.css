@@ -140,7 +140,7 @@ section .items .item {
   background-repeat: no-repeat;
   background-position: center;
   width: 25%;
-  padding-top: 34%;
+  padding-top: 34vw;
   position: relative;
   transition: all 300ms ease-in;
   border-bottom: solid 1px #ffc917;
@@ -150,7 +150,7 @@ section .items .item {
 {
   section .items .item {
     width: 50%;
-    padding-top: 75%;
+    padding-top: 75vw;
   }
 }
 
@@ -159,7 +159,7 @@ section .items .item {
 {
   section .items .item {
     width: 100%;
-    padding-top: 100%;
+    padding-top: 100vw;
   }
 }
 
