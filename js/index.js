@@ -29,6 +29,14 @@ var db = {
           "love"   : false
         },
         {
+          "cover"  : "donkey-kong-country-snes.jpg",
+          "type"   : "Super Nintendo",
+          "name"   : "Donkey Kong Country",
+          "rate"   : "8.5",
+          "people" : "Nintendo, Rare",
+          "love"   : true
+        },
+        {
           "cover"  : "super-mario-world-snes.jpg",
           "type"   : "Super Nintendo",
           "name"   : "Super Mario World",
