@@ -68,6 +68,29 @@ aside.menu nav a span {
   line-height: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+@media (max-width: 1023px)
+{
+  aside.menu {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+  }
+  aside.menu nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  aside.menu nav a {
+    height:auto;
+  }
+  aside.menu nav a i {
+    margin: 0;
+  }
+  aside.menu nav a span {
+    display: none;
+  }
+}
 main {
   width: calc(100% - 80px);
   margin-left: 80px;
@@ -75,7 +98,14 @@ main {
   overflow: auto;
   height: 100%;
 }
-
+@media (max-width: 1023px)
+{
+  main {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+}
 section .divisor {
   display: inline-block;
   width: 100%;
@@ -113,6 +143,7 @@ section .items .item {
   padding-top: 34%;
   position: relative;
   transition: all 300ms ease-in;
+  border-bottom: solid 1px #ffc917;
 }
 
 @media (max-width: 1023px)
@@ -120,6 +151,15 @@ section .items .item {
   section .items .item {
     width: 50%;
     padding-top: 75%;
+  }
+}
+
+
+@media (max-width: 620px)
+{
+  section .items .item {
+    width: 100%;
+    padding-top: 100%;
   }
 }
 
