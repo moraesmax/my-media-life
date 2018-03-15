@@ -1,0 +1,195 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+aside.menu {
+  width: 80px;
+  display: block;
+  height: 100%;
+  background-color: #fcfcfc;
+  overflow: auto;
+  float: left;
+  box-shadow: 1px 0 3px 0 rgba(0, 0, 0, .12);
+}
+
+aside.menu nav {
+  display: block;
+  height: 100%;
+}
+
+aside.menu nav a {
+  display: block;
+  text-decoration: none;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 150ms ease-in;
+}
+
+aside.menu nav a:hover {
+  background-color: #ededed;
+}
+
+aside.menu nav a .content {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+aside.menu nav a i {
+  font-size: 30px;
+  color: #adadad;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+aside.menu nav a span {
+  display: block;
+  font-size: 12px;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: #adadad;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+main {
+  width: calc(100% - 80px);
+  margin-left: 80px;
+  display: block;
+  overflow: auto;
+  height: 100%;
+}
+
+section .divisor {
+  display: inline-block;
+  width: 100%;
+  margin: 30px 0;
+}
+
+section .divisor i {
+  color: #333;
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+section .divisor hr {
+  display: block;
+  margin: 15px auto 15px;
+  width: 70px;
+  height: 3px;
+  border: none;
+  background-color: #ffc917;
+}
+
+section .items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section .items .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25%;
+  padding-top: 34%;
+  position: relative;
+  transition: all 300ms ease-in;
+}
+
+@media (max-width: 1023px)
+{
+  section .items .item {
+    width: 50%;
+    padding-top: 75%;
+  }
+}
+
+section .items .item footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 100px 35px 25px;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 1));
+}
+
+section .items .item footer .row {
+  display: block;
+}
+
+section .items .item footer .type {
+  margin-bottom: 8px;
+  padding-top: 21px;
+  font-family: Montserrat, sans-serif;
+  color: #f2be5c;
+  font-size: 14px;
+}
+
+section .items .item footer .name {
+  color: #f7f7f7;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+section .items .item footer .rate {
+    margin-right: 5px;
+    border: 2px solid #60db44;
+    border-radius: 100%;
+    font-family: Proximanovacond, sans-serif;
+    color: #60db44;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 13px;
+    line-height: 26px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+section .items .item footer .people {
+  display: inline-block;
+    margin-top: 13px;
+    padding: 3px 5px 0;
+    font-family: Proximanovacond, sans-serif;
+    color: #c4c2c2;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+section .items .item header {
+  display: block;
+  text-align: right;
+  width: 100%;
+  padding: 35px 25px;
+}
+section .items .item header i {
+  color: #ccc;
+  font-size: 50px;
+}
+section .items .item header i.on {
+  color: red;
+}
