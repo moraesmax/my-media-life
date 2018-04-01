@@ -43,6 +43,14 @@ var db = {
           "rate"   : "8.5",
           "people" : "Nintendo",
           "love"   : true
+        },
+        {
+          "cover"  : "shadow-of-mordor-pc.jpg",
+          "type"   : "PC",
+          "name"   : "Shadow of Mordor",
+          "rate"   : "9.3",
+          "people" : "Monolith Productions",
+          "love"   : true
         }
       ]
     },
