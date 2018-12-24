@@ -4,60 +4,47 @@
   <meta charset="utf-8">
   <title>My Media Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900%7CMontserrat:400,700%7COswald:300,400,700%7COpen+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CSource+Sans+Pro:200,300,regular,600,900%7CAsap:regular,700%7CUltra:regular&amp;subset=latin,latin-ext,latin,latin-ext">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <aside class="menu">
-    <nav></nav>
-  </aside>
   <main></main>
-
-  <script type="text/hogan" id="menu-item">
+  
+  
+  
+  <script type="text/html" id="main">
     {{#collection}}
-      <a href="javascript:void(0)" data-id="{{icon}}">
-        <div class="content">
-          <i class="fa fa-{{icon}}"></i>
-          <span>{{label}}</span>
-        </div>
-      </a>
-    {{/collection}}
-  </script>
-
-  <script type="text/hogan" id="main">
-    {{#collection}}
-      <section>
-        <div class="divisor" data-id="{{icon}}">
-          <hr>
-          <i class="fa fa-{{icon}}"></i>
-        </div>
-        <div class="items">
-          {{#items}}
-            <div class="item" style="background-image:url(img/{{cover}})">
-              <header>
-                <i class="fas fa-heart {{#love}}on{{/love}}"></i>
-              </header>
-              <footer>
-                <div class="row">
-                  <span class="type">{{type}}</span>
-                </div>
-                <div class="row">
-                  <span class="name">{{name}}</span>
-                </div>
-                <div class="row">
-                  <span class="rate">{{rate}}</span>
-                  <span class="people">{{people}}</span>
-                </div>
-              </footer>
+    <section>
+      <div class="divisor" data-id="{{icon}}">
+        <hr>
+        <i class="fa fa-{{icon}}"></i>
+      </div>
+      <div class="items">
+        {{#items}}
+        <div class="item">
+          <div class="capa" style="background-image: url('img/{{cover}}')"></div>
+          <div class="conteudo">
+            <div class="favorito">
+              <i class="fas fa-heart {{#love}}on{{/love}}"></i>
             </div>
-          {{/items}}
+            <h2>{{name}}</h2>
+            <p>
+              {{text}}
+            </p>
+            <div class="nota" data-nota="{{rate}}">
+            </div>
+            <div class="info">
+              <span class="plataforma">{{type}}</span> - <span>{{people}}</span>
+            </div>
+          </div>
         </div>
-      </section>
+        {{/items}}
+      </div>
+    </section>
     {{/collection}}
   </script>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
   <script src="js/hogan.js"></script>
   <script src="js/index.js"> </script>
 </body>
